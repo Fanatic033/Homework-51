@@ -11,7 +11,7 @@ const  App = () => {
     };
   return (
     <>
-    <button onClick={changeNumbers}>New numbers</button>
+    <button className={'btn'} onClick={changeNumbers}>New numbers</button>
         <Circles numbers={numbers}/>
   </>
   )

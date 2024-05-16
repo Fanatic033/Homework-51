@@ -1,4 +1,5 @@
 import React from "react";
+import './Circle.css'
 
 interface ForNumbers {
     numbers: number[];
@@ -6,13 +7,13 @@ interface ForNumbers {
 
 const Circles: React.FC<ForNumbers>= ({numbers}) => {
     return(
-        <ul>
-            <ul>
+        <>
+            <ul className={'circleParent'}>
                 {numbers.map((number, index) => (
-                    <li key={index}>{number}</li>
+                    <li className={'circleElement'} key={index}>{number}</li>
                 ))}
             </ul>
-        </ul>
+        </>
     )
 }
 
