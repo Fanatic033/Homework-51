@@ -7,7 +7,8 @@ const  App = () => {
 
     const changeNumbers = () => {
         const newNumbers = numbers.map(() => Math.floor(Math.random() * (36 - 5 + 1)) + 5);
-        setNumbers(newNumbers);
+        const sortedNumbers = newNumbers.sort((a, b) => a - b);
+        setNumbers(sortedNumbers);
     };
   return (
     <>
