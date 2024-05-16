@@ -1,6 +1,7 @@
 import './App.css'
 import './components/Circles/Circles'
 import {useState} from "react";
+import Circles from "./components/Circles/Circles";
 const  App = () => {
     const [numbers, setNumbers] = useState([5, 11, 16, 23, 32]);
 
@@ -11,6 +12,7 @@ const  App = () => {
   return (
     <>
     <button onClick={changeNumbers}>New numbers</button>
+        <Circles numbers={numbers}/>
   </>
   )
 }
